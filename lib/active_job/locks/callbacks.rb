@@ -34,7 +34,7 @@ module ActiveJob
         end
 
         around_perform if: :lock_type do |job, block|
-          if @my_lock = redis_lock.lock(lock_resource(job.arguments), ttl * 1000 )
+          if @my_lock = redis_lock.lock(lock_resource(job.arguments), ttl.to_i * 1000 )
             block.call
             redis_lock.unlock(@my_lock)
           else

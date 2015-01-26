@@ -16,7 +16,7 @@ module ActiveJob
       end
 
       def ttl
-        @options[:ttl]
+        @options[:ttl] || 1.minute
       end
 
       def requeue_wait
