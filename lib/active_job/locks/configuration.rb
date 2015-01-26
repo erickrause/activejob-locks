@@ -1,9 +1,19 @@
 module ActiveJob
   module Locks
-    class Configuration
-      attr_accessor(:redis) { [Redis.current.client.options[:url]] }
-      attr_accessor(:requeue_wait) { 5.seconds }
-      attr_accessor(:lock_time) { 1.minute }
+
+    module Configuration
+      extend ActiveSupport::Concern
+
+      module ClassMethods
+        mattr_reader(:locks) { ActiveSupport::OrderedOptions.new }
+        mattr_accessor(:redis)
+
+        def locks=(options)
+          options.each { |k,v| send("#{k}=", v) }
+        end
+
+      end
+
     end
   end
 end
