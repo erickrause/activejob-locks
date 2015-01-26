@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency 'activejob'
-  s.add_dependency 'redis'
-  s.add_dependency 'redlock'
+  s.add_dependency 'activejob', '~> 4.2.0'
+  s.add_dependency 'redlock', '~> 0.0.1'
 end
