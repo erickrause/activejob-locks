@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Activejob::Locks::VERSION
   s.authors     = ["Eric Krause"]
   s.email       = ["eric.krause@gmail.com"]
-  s.homepage    = "https://github.com/eric.krause/activejob-locks"
+  s.homepage    = "https://github.com/erickrause/activejob-locks"
   s.description = "Activejob Locks is an ActiveJob addon that will lock workers based on queue or work payload"
   s.summary     = s.description
   s.license     = "MIT"
