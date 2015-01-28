@@ -1,6 +1,6 @@
 # Activejob::Locks
 
-Activejob Locks is an [ActiveJob](https://github.com/rails/activejob) addon that will lock your workers based on the queue or the payload.  Activejob Locks is dependent on [Redlock](https://github.com/antirez/redlock-rb) which as they say "This code implements an algorithm which is currently a proposal, it was not formally analyzed. Make sure to understand how it works before using it in your production environments."  Use at your own risk.
+Activejob Locks is an [ActiveJob](https://github.com/rails/activejob) addon that will lock your workers based on the queue or the payload.  Activejob Locks is dependent on [Redlock](https://github.com/leandromoreira/redlock-rb) which is just an implementation of a proposed algorithm. Use at your own risk.
 
 ## Installation
 
