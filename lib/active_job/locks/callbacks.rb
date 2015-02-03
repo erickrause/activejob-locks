@@ -30,7 +30,7 @@ module ActiveJob
 
         rescue_from(Exception) do |e|
           redis_lock.unlock(@my_lock) if @my_lock
-          throw e
+          raise e
         end
 
         around_perform if: :lock_type do |job, block|
