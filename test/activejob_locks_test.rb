@@ -1,7 +1,8 @@
-require 'test_helper'
+require 'helper'
+
 
 class ActivejobLocksTest < ActiveSupport::TestCase
   test "truth" do
-    assert_kind_of Module, ActivejobLocks
+    assert_kind_of Module, ActiveJob::Locks
   end
 end
