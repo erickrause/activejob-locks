@@ -19,4 +19,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'activejob', '~> 4.2', '>= 4.2.0'
   s.add_dependency 'redlock', '~> 0.0.1'
+  s.add_development_dependency 'globalid'
 end

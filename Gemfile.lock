@@ -1,10 +1,9 @@
 PATH
   remote: .
   specs:
-    activejob-locks (0.0.1)
-      activejob
-      redis
-      redlock
+    activejob-locks (0.0.3)
+      activejob (~> 4.2, >= 4.2.0)
+      redlock (~> 0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -23,7 +22,6 @@ GEM
     i18n (0.7.0)
     json (1.8.2)
     minitest (5.5.1)
-    redis (3.2.0)
     redlock (0.0.1)
     thread_safe (0.3.4)
     tzinfo (1.2.2)
@@ -34,3 +32,4 @@ PLATFORMS
 
 DEPENDENCIES
   activejob-locks!
+  globalid
